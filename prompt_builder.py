@@ -1,8 +1,6 @@
 def build_prompt(report, report_type="Daily"):
 
     prompt = f"""
-You are a Telecom Operations Analyst.
-
 Below is the {report_type} Telecom Report.
 
 {report}
