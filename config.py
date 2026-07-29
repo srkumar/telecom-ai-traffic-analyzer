@@ -1,0 +1,8 @@
+# Report Configuration
+
+REPORT_TITLE = "Telecom AI Traffic Analyzer"
+REPORT_TYPE = "Daily"
+TOP_COUNTRIES = 10
+TOP_OPERATORS = 10
+DELIVERY_SLA = 95
+HEALTHY_SLA = 99

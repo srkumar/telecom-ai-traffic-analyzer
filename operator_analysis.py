@@ -76,6 +76,7 @@ def operator_analysis(df):
         / operator_summary["total_traffic"]
     ) * 100
 
+
     return {
         "operator_summary": operator_summary,
         "daily_operator_report": daily_operator_report
