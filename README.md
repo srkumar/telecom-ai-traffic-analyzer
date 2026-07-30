@@ -72,13 +72,13 @@ telecom-ai-traffic-analyzer/
 
 ### Dashboard Home
 
-![Dashboard](images/dashboard_home.png)
+![Dashboard](images/dashboard.png)
 
 ---
 
 ### Filters
 
-![Filters](images/filters.png)
+![Filters](images/filter.png)
 
 ---
 
@@ -96,7 +96,7 @@ telecom-ai-traffic-analyzer/
 
 ### Charts
 
-![Charts](images/charts.png)
+![Charts](images/chart.png)
 
 ---
 
