@@ -108,7 +108,6 @@ telecom-ai-traffic-analyzer/
 
 ## 🏗 Project Architecture
 
-> *(Add your architecture diagram after creating `architecture.png`.)*
 
 ![Architecture](images/architecture.png)
 
