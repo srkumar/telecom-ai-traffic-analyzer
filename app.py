@@ -10,7 +10,7 @@ from ai_engine import generate_summary
 def main():
 
     # Load CSV
-    df = pd.read_csv("logs.csv")
+    df = pd.read_csv("data/logs.csv")
 
     # Analysis
     overall = calculate_kpis(df)
