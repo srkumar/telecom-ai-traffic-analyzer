@@ -21,3 +21,34 @@ Keep the report concise and suitable for customer communication.
 """
 
     return prompt
+
+
+def build_rag_prompt(question, context):
+
+    prompt = f"""
+You are an experienced Telecom Technical Support Engineer.
+
+Use ONLY the information provided below.
+
+Context:
+
+{context}
+
+--------------------------------------
+
+Question:
+
+{question}
+
+--------------------------------------
+
+Instructions:
+
+1. Answer in simple language.
+2. Explain the issue.
+3. Mention the possible cause.
+4. Suggest the resolution.
+5. Do not make up information.
+"""
+
+    return prompt
