@@ -1,106 +1,119 @@
-# Telecom AI Traffic Analyzer
+# 📊 Telecom AI Traffic Analyzer
 
-## Overview
+An AI-powered telecom analytics dashboard built using **Python, Pandas, Streamlit, and Google Gemini AI**.
 
-Telecom AI Traffic Analyzer is a Python-based application designed to analyze A2P messaging traffic logs and generate operational insights. The application processes telecom traffic using Python and Pandas to calculate key performance indicators (KPIs), perform country-wise and operator-wise analysis, and generate structured reports. An optional AI layer can be used to produce executive summaries and business-ready operational reports.
-
-This project demonstrates how traditional data analytics and Generative AI can work together in telecom operations.
+This application analyzes telecom messaging logs, generates key operational KPIs, provides country and operator level insights, visualizes traffic trends, and produces AI-assisted executive summaries for daily operational reporting.
 
 ---
 
-## Features
+## 🚀 Features
 
-* Overall KPI Analysis
-* Country-wise Traffic Analysis
-* Operator-wise Traffic Analysis
-* Daily Traffic Report Generation
-* Top Countries by Traffic
-* Top Operators by Traffic
-* Delivery & Failure Percentage Calculation
-* AI-ready Prompt Builder
-* AI-assisted Executive Summary (Gemini API)
-* Modular Python Project Structure
+* 📂 Upload telecom log CSV files
+* 📈 Overall KPI Dashboard
+
+  * Total Traffic
+  * Delivered Messages
+  * Failed Messages
+  * Delivery Percentage
+* 🌍 Country-wise Analysis
+* 📡 Operator-wise Analysis
+* 📊 Interactive Charts
+* 🔍 Filters
+
+  * Date
+  * Country
+  * Operator
+* 🤖 AI Executive Summary using Google Gemini
+* 📄 Automated Telecom Operations Report
 
 ---
 
-## Technologies Used
+## 🛠 Technology Stack
 
-* Python 3.x
+* Python
 * Pandas
+* Streamlit
 * Google Gemini API
-* Prompt Engineering
 * Git & GitHub
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 telecom-ai-traffic-analyzer/
 │
+├── dashboard.py
 ├── app.py
-├── kpi.py
-├── country_analysis.py
-├── operator_analysis.py
-├── report_builder.py
-├── prompt_builder.py
-├── ai_engine.py
-├── logs.csv
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+│
+├── analysis/
+│   ├── kpi.py
+│   ├── country_analysis.py
+│   └── operator_analysis.py
+│
+├── ai/
+│   ├── ai_engine.py
+│   └── prompt_builder.py
+│
+├── reports/
+│   └── report_builder.py
+│
+├── data/
+│   └── sample_logs.csv
+│
+└── images/
 ```
 
 ---
 
-## Architecture
+## 📸 Dashboard Screenshots
 
-```text
-Telecom Logs (CSV)
-        │
-        ▼
-Data Processing (Pandas)
-        │
-        ├── KPI Analysis
-        ├── Country Analysis
-        ├── Operator Analysis
-        │
-        ▼
-Structured Report
-        │
-        ▼
-Prompt Builder
-        │
-        ▼
-Gemini AI (Optional)
-        │
-        ▼
-Executive Summary
-RCA
-Business Impact
-Recommendations
-```
+### Dashboard Home
+
+![Dashboard](images/dashboard.png)
 
 ---
 
-## Sample Output
+### Filters
 
-The application generates reports including:
-
-* Overall Traffic
-* Delivered Messages
-* Failed Messages
-* Delivery Percentage
-* Country Summary
-* Top Countries by Traffic
-* Operator Summary
-* Top Operators by Traffic
-* Date-wise Country Report
-* Date-wise Operator Report
+![Filters](images/filter.png)
 
 ---
 
-## Installation
+### Country Analysis
+
+![Country Analysis](images/country_analysis.png)
+
+---
+
+### Operator Analysis
+
+![Operator Analysis](images/operator_analysis.png)
+
+---
+
+### Charts
+
+![Charts](images/chart.png)
+
+---
+
+### AI Executive Summary
+
+![AI Summary](images/ai_summary.png)
+
+---
+
+## 🏗 Project Architecture
+
+
+![Architecture](images/architecture.png)
+
+---
+
+## ⚙️ Installation
 
 Clone the repository:
 
@@ -108,7 +121,7 @@ Clone the repository:
 git clone https://github.com/srkumar/telecom-ai-traffic-analyzer.git
 ```
 
-Move to the project directory:
+Move into the project folder:
 
 ```bash
 cd telecom-ai-traffic-analyzer
@@ -120,52 +133,61 @@ Install the required packages:
 pip install -r requirements.txt
 ```
 
-Create a `.env` file in the project root:
+Configure your Google Gemini API key as an environment variable or in your local configuration (do not commit API keys to GitHub).
 
-```text
-GEMINI_API_KEY=your_api_key_here
-```
-
-Run the application:
+Run the Streamlit dashboard:
 
 ```bash
-python app.py
+python -m streamlit run dashboard.py
 ```
 
 ---
 
-## Future Enhancements
+## 📊 Sample Workflow
 
-* Streamlit Dashboard
-* Interactive Charts
-* Trend Analysis
-* Hourly Traffic Analysis
-* Error Code Analysis
+```text
+Upload CSV
+      │
+      ▼
+Apply Filters
+      │
+      ▼
+Generate KPI Dashboard
+      │
+      ▼
+Country & Operator Analysis
+      │
+      ▼
+Interactive Charts
+      │
+      ▼
+Generate AI Executive Summary
+```
+
+---
+
+## 🎯 Future Enhancements
+
+* Download AI Summary (PDF/TXT)
+* Download Dashboard Report
+* Plotly Interactive Charts
 * Sender Analysis
+* Error Code Analysis
 * Account Analysis
-* PDF Report Generation
-* Automated Daily Report Scheduling
+* Traffic Spike Detection
+* Daily/Weekly Trend Analysis
+* AI Chat Assistant for Telecom Analytics
 
 ---
 
-## Objectives
-
-This project demonstrates practical implementation of:
-
-* Python Programming
-* Pandas Data Analysis
-* Telecom KPI Reporting
-* Modular Software Design
-* Prompt Engineering
-* Generative AI Integration
-* Git & GitHub Version Control
-
----
-
-## Author
+## 👨‍💻 Author
 
 **Shashi Ranjan Kumar**
 
-Telecom Operations | A2P Messaging | Python | Pandas | Generative AI | Technical Operations
+Telecom Operations | A2P Messaging | Python | Pandas | Streamlit | Generative AI
 
-GitHub: https://github.com/srkumar
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving the repository a ⭐ on GitHub.
